@@ -1,15 +1,20 @@
+*{
+    font-family: Jost, sans-serif;
+}
+
 header{
     display: block;
     height: 50px;
     background-color:#D9D9D9;
-    margin: 0;
+    margin: auto;
+    max-width: 1280px;
 }
 .logo{
     margin: 2px 5px 0px 5px;
 }
 
 .theme{
-    margin: 2px;
+    margin: 0px;
 }
 
 ul 
@@ -19,8 +24,12 @@ ul
     
 }
 
-li{
+a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .navbar-list
@@ -33,4 +42,14 @@ li{
 .navbar
 {
     display: flex;   
+}
+
+button{
+    border: 0;
+    background-color: rgba(1, 1, 1, 0%);
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 30%);
+    border: rgba(0, 0, 0, 30%);
+    border-radius: 10px;
 }
