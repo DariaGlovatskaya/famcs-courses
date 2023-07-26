@@ -5,9 +5,8 @@
 }
 header{
     display: block;
-    height: 51px;
+    height: 52px;
     background-color:#D9D9D9;
-    max-width: 1280px;
 }
 .logo{
     margin: 2px 5px 0px 5px;
@@ -30,6 +29,7 @@ ul
 
 a{
     text-decoration: none;
+    font-size: 20px;
 }
 
 a:hover{
@@ -58,6 +58,12 @@ button:hover{
     border-radius: 10px;
 }
 
+button:active{
+    background-color: rgba(0, 0, 0, 20%);
+    border: rgba(0, 0, 0, 20%);
+    border-radius: 10px;
+}
+
 section {
     display: block;
 }
@@ -69,12 +75,31 @@ section {
 
 .name {
     text-align: left;
-    font-size: 48px;
+    font-size: 40px;
     padding: 10px 50px 15px;
 }
 
 .about {
     text-align: left;
     font-size: 24px;
-    padding: 0px 50px 15px;
+    padding: 0px 50px 20px;
+}
+.serv{
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.serv-name{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 50px 15px;
+}
+
+.first-line{
+    display: flex;
+    flex-wrap: wrap;
+}
+.second-line{
+    display: flex;
+    flex-wrap: wrap;
 }
