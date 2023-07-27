@@ -75,16 +75,31 @@ section{
     display: block;
 }
 
-#AboutUs{
+.AboutUs{
     align-items: center;
     background-color: rgb(188, 188, 188);
-    padding: 45px 0px 30px 0px;
+}
+
+#AboutUs{
+    transform: translateY(-40px);
 }
 
 .name {
     text-align: left;
     font-size: 40px;
     padding: 10px 50px 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.name::after{
+    content: '';
+    position: absolute;
+    background: black;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
 }
 
 .about{
@@ -92,10 +107,13 @@ section{
     font-size: 24px;
     padding: 0px 50px 20px;
 }
-#Servises{
+.Servises{
     align-items: center;
     background-color: #D9D9D9;
-    padding: 45px 0px 30px 0px;
+}
+
+#Servises{
+    transform: translateY(-40px);
 }
 
 .serv-name{
@@ -123,9 +141,13 @@ section{
     font-size: 20px;
 }
 
-#Contacts{
+.Contacts{
     background-color: rgb(188, 188, 188);
     padding: 2%;
+}
+
+#Contacts{
+    transform: translateY(-40px);
 }
 
 .contact-items{
@@ -135,7 +157,7 @@ section{
 .contact-h1{
     text-align: center;
     font-size: 40px;
-    padding: 10px 50px 15px;
+    padding: 5px 50px 15px;
 }
 
 .map{
