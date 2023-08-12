@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+</head>
+<body>
+    <h2>Форма для заполнения</h2>
+    <form action="./page-two.html">
+        <div id="name">
+            <label for="name-input" class="requiredLabel">Имя:</label>
+            <input
+            pattern="[a-zA-Zа-яА-ЯёЁ]{2-20}"
+            required
+            id="name-input"
+            type="text"
+            name="name"
+            placeholder="Введите имя(только латинские буквы или кириллица)"/>
+        </div>
+        <div id="age">
+            <label for="age-input" class="requiredLabel">Ваш возраст:</label>
+            <input
+            pattern="[0-9]"
+            required
+            id="age-input"
+            type="number"
+            placeholder="Введите возраст(числа от 1 до 150)"/>
+        </div>
+        <div id="gender">
+            <p id="genderLabel" class="requiredLabel">Ваш пол:</p>
+            <input
+            required
+            id="female"
+            type="radio"
+            name="gender"
+            />
+            <label for="female">Женский</label>
+            <input
+            required
+            id="male"
+            type="radio"
+            name="gender"
+            />
+            <label for="male">Мужской</label>
+        </div>
+        <div id="resume">
+            <label for="resume-input" class="requiredLabel">Ваше резюме: </label>
+            <input
+            required
+            id="resume-input"
+            type="file"
+            name="resume"
+            />
+        </div>
+        <div id="about">
+            <label for="about-input">Пару слов о себе:</label>
+            <textarea name="about-input" placeholder="Расскажите кто вы, что вы и как вы"></textarea>
+        </div>
+        <div id="data">
+            <label data-tooltip="В связи с законом об использовании персональных данных" for="data-input" >Согласен(-а) на обработку персональных данных:<a class="requiredLabel"></a></label>
+            <input
+            required
+            id="data-input"
+            type="checkbox"
+            />
+        </div>
+        <div id="buttons">
+             <input type="reset" id="reset">
+             <input type="submit" id="submit">
+        </div>
+    </form>
+</body>
+</html>

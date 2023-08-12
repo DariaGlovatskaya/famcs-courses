@@ -1,0 +1,204 @@
+body{
+    height: 600px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background-color: aqua;
+}
+form{
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(151, 234, 253);
+}
+
+input::placeholder{
+    color: aliceblue;
+}
+
+input[type="text"]{
+    width: 350px;
+    background-color: rgb(88, 224, 254);
+    border-radius: 3px;
+    margin-left: 85px;
+}
+
+input[type="text"]:invalid{
+    background-color: rgb(198, 0, 0);
+}
+
+input[type="text"]:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+#name{
+    margin: 1% 0;
+}
+
+input[type="number"]{
+    width: 295px;
+    background-color: rgb(88, 224, 254);
+    border-radius: 3px;
+    margin-left: 30px;
+}
+
+input[type="number"]:invalid{
+    background-color: rgb(198, 0, 0);
+}
+
+input[type="number"]:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+#age{
+    margin: 1% 0;
+}
+
+#gender{
+    display: flex;
+    align-items: center;
+}
+
+#genderLabel{
+    margin-right: 55px;
+}
+
+label[for="male"]:hover,[for="female"]:hover{
+    color: #3989c9;
+}
+
+input[type="file"]{
+    margin-left: 20px;
+}
+
+input::-webkit-file-upload-button {
+    width: 25px;
+    height: 25px;
+    background-image: url(1.png);
+    background-size: 25px;
+    background-color: rgb(151, 234, 253);
+    border: none;
+    text-indent: -99999px;
+    margin-top:4px ;
+
+}
+
+input[type="file"]:hover{
+    cursor: pointer;
+}
+
+input::-webkit-file-upload-button:hover {
+    cursor: pointer;
+}
+
+
+input::-webkit-file-upload-button:active {
+    background-color: rgb(39, 168, 168);
+    border-radius: 2px;
+    transition-delay: 0;
+}
+
+#about{
+    display: flex;
+    margin: 1% 0;
+}
+
+textarea{
+    margin: 0 1%;
+    min-width: 270px;
+    max-width: 270px;
+    min-height: 30px;
+    max-height: 150px;
+    margin-left: 15px;
+}
+
+#data{
+    display: flex;
+    margin: 1% 0;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.secondPage{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(85, 26, 139);
+}
+
+a{
+    text-decoration: none;
+}
+
+.requiredLabel::after{
+    content: "*";
+    color: red;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 300px;
+    left: 40%; top: 80%; 
+    background: #3989c9; 
+    color: #fff; 
+    padding: 0.5em; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+    opacity: 0; 
+} 
+
+[data-tooltip]:hover::after {
+    opacity: 1; 
+    top: 2em; 
+    font-size: 16px;
+    padding: 10px 10px; 
+    border: none; 
+    border-radius: 8px;
+    display:grid;
+}
+
+#reset {
+    background-color:rgb(4, 176, 176);
+    border-radius: 10px;
+    width: 145px;
+    height: 35px;
+    color: rgb(151, 234, 253);
+    border-style: none;
+}
+
+#reset:hover {
+    background-color: rgb(38, 145, 145);
+    color:#9c455a;
+    cursor: pointer;
+}
+
+#reset:active {
+    background-color: rgb(8, 142, 142);
+}
+
+#submit {
+    background-color:rgb(4, 176, 176);
+    border-radius: 10px;
+    width: 145px;
+    height: 35px;
+    color: rgb(151, 234, 253);
+    border-style: none;
+}
+
+#submit:hover {
+    background-color: rgb(38, 145, 145);
+    color:#9c455a;
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: rgb(8, 142, 142);
+}
+
