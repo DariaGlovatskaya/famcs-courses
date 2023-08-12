@@ -62,8 +62,8 @@ input[type="number"]:invalid{
     margin-right: 55px;
 }
 
-input[type="radio"]:invalid{
-    border: 1px solid red;
+label[for="male"]:hover,[for="female"]:hover{
+    color: #3989c9;
 }
 
 input[type="file"]{
