@@ -49,11 +49,6 @@ input[type="number"]:invalid{
     background-color: rgb(198, 0, 0);
 }
 
-input[type="number"]:hover{
-    background-color: rgb(161, 0, 0);
-}
-
-
 #age{
     margin: 1% 0;
 }
